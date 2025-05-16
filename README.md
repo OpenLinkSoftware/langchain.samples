@@ -1,14 +1,18 @@
 # langchain.samples
+You could run sample with uv package
+```
+uv run langchain_to_dbpedia_movies.py
+```
+OR
 
-You need install next packages before execute
+Install next packages before execute
 ```
 $ pip install langchain-openai
 $ pip install langchain
+$ pip install rdflib
 ```
 
 Install patched version of `langchain_community` package:
 ```
-$ git clone https://github.com/OpenLinkSoftware/langchain.git
-$ cd langchain/libs/community/
-$ pip install -e .
+$ pip install git+https://github.com/OpenLinkSoftware/langchain-community.git#subdirectory=libs/community
 ```

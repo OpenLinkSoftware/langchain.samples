@@ -1,0 +1,16 @@
+[project]
+name = "langchain-samples"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "ipykernel>=6.29.5",
+    "langchain>=0.3.25",
+    "langchain-community",
+    "langchain-openai>=0.3.17",
+    "rdflib>=7.1.4",
+]
+
+[tool.uv.sources]
+langchain-community = { git = "https://github.com/OpenLinkSoftware/langchain-community.git", subdirectory = "libs/community" }
